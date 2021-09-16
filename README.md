@@ -1,50 +1,69 @@
-# Profile card component
+# Frontend Mentor - Profile card component solution
 
-![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of contents
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-## The challenge
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-Your challenge is to build out this profile card component and get it looking as close to the design as possible.
+## Overview
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+### The challenge
 
-## Where to find everything
+- Build out the project to the designs provided
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
+### Screenshot
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
+![](./solution.png)
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### Links
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- Solution URL: [https://github.com/Borovnica1/profile-card]
+- Live Site URL: [https://profile-card-xi-five.vercel.app/]
+## My process
 
-## Building your project
+### Built with
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+### What I learned
+I learned about BEM naming methodology
+```html
+<div class="profile-card__bio">
+  <img src="images/image-victor.jpg" alt="User profile picture" class="profile-card__photo">
+    <h4 class="profile-card__name-and-age">
+      <span class="profile-card__name">Victor Crest</span>
+      <span class="profile-card__age">26</span>
+    </h4>
+  <h5 class="profile-card__city">London</h5>
+</div>
+```
 
-## Deploying your project
+Learned about variables in css
+```css
+:root {
+  --main-bg-color: hsl(185, 75%, 39%);
+  --main-font-color-dark: hsl(229, 23%, 23%);
+  --secondary-bg-color: hsl(227, 10%, 46%);
+  --neutral-color: hsl(0, 0%, 59%);
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+  --primary-font-size: 18px;
+}
+```
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+## Author
 
-## Create a custom `README.md`
-
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
-
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
-
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+- Website - [Nikola](https://github.com/Borovnica1)
