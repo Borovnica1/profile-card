@@ -14,10 +14,41 @@
 
     <title>Profile card component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style></style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    Coded by <a href="#">Your Name Here</a>.
+    <section class="container">
+      <div class="container__pattern-top"></div>
+      <div class="container__pattern-bottom"></div>
+      <article class="profile-card">
+        <div class="profile-card__bio-top-pattern"></div>
+        <div class="profile-card__bio">
+          <img src="images/image-victor.jpg" alt="User profile picture" class="profile-card__photo">
+          <h4 class="profile-card__name-and-age">
+            <span class="profile-card__name">Victor Crest</span>
+            <span class="profile-card__age">26</span>
+          </h4>
+          <h5 class="profile-card__city">London</h5>
+        </div>
+        <div class="profile-card__stats">
+          <div class="profile-card__followers">
+            <h4 class="profile-card__followers-count">80K</h4>
+            <h5>Followers</h5>
+          </div>
+          <div class="profile-card__likes">
+            <h4 class="profile-card__likes-count">803K</h4>
+            <h5>Likes</h5>
+          </div>
+          <div class="profile-card__photos">
+            <h4 class="profile-card__photos-count">1.4K</h4>
+            <h5>Photos</h5>
+          </div>
+        </div>
+      </article>
+    </section>
+    <span class="author">Coded by <a href="https://github.com/Borovnica1">Nikola</a>.</span>
   </body>
 </html>

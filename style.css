@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+:root {
+  --main-bg-color: hsl(185, 75%, 39%);
+  --main-font-color-dark: hsl(229, 23%, 23%);
+  --secondary-bg-color: hsl(227, 10%, 46%);
+  --neutral-color: hsl(0, 0%, 59%);
+
+  --primary-font-size: 18px;
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-size: 20%;
+  background-color: var(--main-bg-color);
+}
+
+.container__pattern-bottom {
+  position: absolute;
+  background-image: url(images/bg-pattern-bottom.svg);
+  width: 50%;
+  height: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+.container__pattern-top {
+  position: absolute;
+  background-image: url(images/bg-pattern-top.svg);
+  width: 50%;
+  height: 50%;
+  background-position: 100% 100%;
+  top: 0;
+  left: 0;
+}
+
+.profile-card {
+  position: relative;
+  width: 350px;
+  height: 380px;
+  background-color: white;
+  font-size: var(--primary-font-size);
+  border-radius: 20px;
+  box-shadow: 15px 15px 50px 1px rgba(0, 0, 0, 0.233);
+}
+
+.profile-card h5, 
+.profile-card__age {
+  color: var(--secondary-bg-color);
+  font-weight: 400;
+  font-size: calc(var(--primary-font-size) - 7px);
+}
+
+.profile-card__bio {
+  position: relative;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.profile-card__photo {
+  border-radius: 50%;
+  border: 5px solid white;
+  margin: 85px 0 20px 0;
+}
+
+.profile-card .profile-card__bio .profile-card__city,
+.profile-card .profile-card__bio .profile-card__age {
+  font-size: initial;
+  margin-top: 5px;
+}
+
+.profile-card__stats {
+  height: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.158);
+}
+
+.profile-card__followers,
+.profile-card__likes,
+.profile-card__photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-card__name,
+.profile-card__followers-count,
+.profile-card__likes-count,
+.profile-card__photos-count {
+  color: var(--main-font-color-dark);
+}
+
+
+
+.profile-card__bio-top-pattern {
+  height: 140px;
+  width: 100%;
+  top: 0;
+  border-radius: 20px 20px 0 0;
+  background-image: url(images/bg-pattern-card.svg);
+  position: absolute;
+  z-index: 1;
+}
+
+.author {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 375px) {
+  .profile-card {
+    width: 330px;
+    margin: 0 10px;
+  }
+}
